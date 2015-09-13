@@ -3,155 +3,181 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="description" content="Christopher J. Dobbins's Portfolio">
+		<meta name="description" content="Christopher Dobbins Home Page">
 		<meta name="author" content="Christopher Dobbins">
-		<title>Christopher Jay | Projects & Code Snippets</title>
+		<title>Christopher Jay | Home</title>
+	
 		<!-- Latest compiled and minified CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 		<!-- Latest compiled and minified JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-	<link href='http://fonts.googleapis.com/css?family=Oxygen:400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Oxygen:400,700' rel='stylesheet' type='text/css'>	
 </head>
 <style>
+
 	body {
+		background-color: #000;
 		font-family: Oxygen, Helvetica, Arial, sans-serif;
-		font-weight: 400;
 	}
-	h1 {
+	#wrap {
+		min-height: 100%;
+	}
+	#maincontainer {
+		overflow: auto;
+		padding-bottom: 15em;
+	}
+	header {
+		font-family: Oxygen, Helvetica, sans-serif;
+		font-weight: 700;
+		color: white;
+		padding-bottom: 1em;
+	}
+	header h1{
 		font-weight: 700;
 	}
-	.carousel {
-		height: 500px;
-		 height: 75vh;
-		 margin-bottom: 60px;
+	navbar ul {
+		list-style-type: none;
+		display: inline-block;
+		margin: 0 auto;
 	}
-	ul {
+	navbar ul li {
+		display: inline;
+		margin-right: 1em;
+		margin-bottom: 1.25em;
+		margin-top: 1.25em;
+	}
+	navbar ul a {
+		text-decoration: none;
+		display: inline;
+		color: white;
+		font-size: 1.25em;
+	}
+	#sidebar-wrapper ul {
+		color: white;
 		list-style-type: none;
 	}
-	ul.nav {
-		font-weight: 700 !important;
+	#sidebar-wrapper ul li {
+		text-decoration: none;
+		 background-color: #41444b;
+		padding-top: .25em;
+		width: 100%;
+	}
+	#sidebar-wrapper ul > li:first-child {
+		font-weight: 700;
+		font-size: 1.25em;
+	}
+	#sidebar-wrapper ul > li:last-child {
+		padding-bottom: .25em;
+	}
+	#sidebar-wrapper ul li a {
+		color: white;
+		text-decoration: none;
+		padding: .25em;
+		width: 100%;
+	}
+	#sidebar-wrapper ul li a:hover {
+		font-weight: 700;
+		background-color: rgba(255,255,255,.125);
 	}
 	a.orangelink{
-		border-bottom: 3px solid #ee5004 !important;
-		padding: .5em !important;
+		border-bottom: 3px solid #ee5004;
+		padding: .5em;
 	}
 	a.orangelink:hover {
-		color: #ee5004 !important;
-		text-decoration: none !important;
-		background: rgba(8,8,8);
-		font-weight: 700;
+		color: #ee5004;
+		text-decoration: none;
 	}
 	a.bluelink{
-		border-bottom: 3px solid #219dbd !important;
-		padding: .5em !important;
+		border-bottom: 3px solid #219dbd;
+		padding: .5em;
 	}
 	a.bluelink:hover {
-		color: #219dbd !important;
-		text-decoration: none !important;
-		background: rgba(8,8,8);
-		font-weight: 700;
+		color: #219dbd;
+		text-decoration: none;
 	}
 	a.greenlink {
-		border-bottom: 3px solid #21bd20 !important;
-		padding: .5em !important;
+		border-bottom: 3px solid #21bd20;
+		padding: .5em;
 	}
 	a.greenlink:hover {
-		color: #21bd20 !important;
-		text-decoration: none !important;
-		background: rgba(8,8,8);
-		font-weight: 700;
-	}
-	h1 a {
-		font-family: Oxygen, Helvetica, Arial, sans-serif;
+		color: #21bd20;
 		text-decoration: none;
+	}
+	article {
 		color: white;
+		background-color: #41444b;
+		padding: 1em;
+		margin: 0 auto;
 	}
-	ul.nav {
+	#top-sidebar {
+		margin-bottom: 5em;
+	}
+	#top-sidebar li{
+		background-color: #41444b;
+	}
+	.footer {
+		color: white;
+		margin-top: -15em;
 		position: relative;
-		float: right;
-		padding-top: 1.5em;
+		height: 15em;
+		clear: both;
+		padding-top: 20em;
 	}
-	ul.nav li {
-		margin-right: 1em;
-		margin-left: 1em;
+	@media(max-width:768px){
+		#sidebar-wrapper{
+			display: none;
+		}		
 	}
-	nav.navbar {
-		background: rgba(51,51,51,.98);
-	}
-	.navbar > .nav > li.active > a, .navbar-nav > li > a:hover {
-        	background-color: rgb(8,8,8,.95) !important;
-        	font-weight: 700;
-    }
-    h1 > a:hover {
-     	color: white;
-     	text-decoration: none;
-    }
-    .navbar-wrapper {
-		 height: 2em;
-    }
-	#contentheading {
-		margin-top: 2em !important;
-		margin-bottom: 2em !important;
-	}
-	@media screen and (max-width: 768px) {
-		#contentheading {
-			margin-top: 12.5em !important;
+	@media(max-width: 460px){
+		navbar ul li {
+			display: block;
 		}
 	}
 </style>
 
 <body>
-	<div class="navbar-wrapper">
-		<div class="container">
+	<header class="text-center">
+		<h1>Christopher Dobbins</h1>
+		<navbar>
+			<ul class="text-center">
+                <!-- <li class="col-sm-3"><a class="greenlink" href="#">Ambitious</a></li> -->
+				<li class="col-sm-4"><a class="bluelink" href="portfolio.html">Creative</a></li>
+				<li class="col-sm-4"><a class="orangelink" href="resume.html">Driven</a></li>
+			</ul>
+		</navbar>
+	</header>
+	<div id="wrap page-content-wrapper">
 
-			<nav class="navbar navbar-inverse">
-			<div class="row">
-				<div class="navbar-header col-sm-6">
-					<h1 role="logo"><a href="index.html">Christopher Dobbins</a></h1>
-				</div>
-					<ul class="nav navbar-nav col-sm-3 col-sm-offset-3">
-						<li class="active"><a href="#" class="bluelink">Portfolio</a></li>
-						<!-- <li><a href="resume.html" class="orangelink">Resume</a></li> -->
-						<li><a href="index.html" class="greenlink">About</a></li>
-					</ul>
-            </div>
-			</nav>
-			</div>
+	<div id="maincontainer" class="container-fluid">
+		<div class="row">
+		<article class="col-sm-4 col-sm-push-4 text-center">
+			<h2>Welcome!</h2>
+			<p>I'm currently a student at General Assembly's Web Development Immersive program. Prior to WDI, I was a low-voltage technician, then I moved into the IT field doing desktop support, some coding, and repairing low-voltage electronics.</p>
+		</article>
+		<div id="sidebar-wrapper" class="col-sm-2 col-sm-push-5 text-center">
+			<ul  id="top-sidebar">
+				<li class="sidebar-brand">Useful Resources</li>
+				<li><a href="http://www.codecademy.com">Codecademy</a></li>
+				<li><a href="http://www.freecodecamp.com">Free Code Camp</a></li>
+				<li><a href="http://www.codeschool.com">Code School</a></li>
+                <li><a href="http://www.eloquentjavascript.net">Eloquent Javascript</a></li>
+
+			</ul>
+
+<!--
+			<ul  id="btm-sidebar">
+				<li class="sidebar-brand">Social</li>
+				<li><a href="#">FB</a></li>
+				<li><a href="#">Twitter</a></li>
+				<li><a href="#">Github</a></li>
+			</ul> -->
+		</div>
+		</div>
 		</div>
 	</div>
-	<div class="container"  id="contentheading">
-	<div class="row">
-		<h2 class="text-center">Projects &amp; Code Snippets</h2>
-	</div>
-	</div>
-	<div class="container">
-		<div class="row">
-		<div class="col-lg-6 col-md-6 col-s-12">
-			<figure><a
-href="/cityexperiencestore/cityexpindex.html" target="_blank"><img
-src="./cityexpstorescreenshot.jpg" alt="screenshot of my sample luxury boutique
-website, City Experience Store"></a></figure>
-		  <figcaption>"The City Experience Store", a sample
-luxury boutique website. (opens in new
-window)</figcaption>
 </div>
-			<div class="col-lg-6 col-md-6 col-s-12">
-	      <figure><a
-href="./ebayfee.html" target="_blank"><img
-src="./ebayfeescreenshot.jpg" alt="screenshot of my Javascript eBay fee
-calculator"></a></figure>
-     <figcaption>An eBay fee calculator written using jQuery (opens
-in new window)</figcaption>
-		</div>
-		</div>
-		<div class="row">
-		<div class="col-lg-6 col-md-6 col-s-12">
-	<figure><a href="nearestmarta.html" target="_blank"><img src="./nearestmartascreenshot.png" alt="screenshot of my Atlanta MARTA Train Station Finder"></a></figure>
-	<figcaption>Nearest Atlanta MARTA train station finder. This is the first time I've used the Google Maps API.</figcaption>
-		</div>
-		<div class="col-lg-6 col-md-6 col-s-12">
-	<figure><a href="./Faith Vending/index.html" target="_blank"><img src="./faithvendingscreenshot.png" alt="screenshot of a mockup site I did for a local business"></a></figure>
-	<figcaption>A mockup site I did for a local vending machine business</figcaption>
-		</div>
-	</div>
+<footer class="col-md-12 footer">
+	<p>&copy; 2015  Christopher J. Dobbins</p>
+</footer>
 </body>
+</html>
