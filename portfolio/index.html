@@ -6,6 +6,7 @@
 		<meta name="description" content="Christopher J. Dobbins's Portfolio">
 		<meta name="author" content="Christopher Dobbins">
 		<title>Christopher Dobbins | Projects & Code Snippets</title>
+        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 		<!-- Latest compiled and minified CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 		<!-- Latest compiled and minified JavaScript -->
@@ -98,6 +99,16 @@
 			margin-top: 12.5em !important;
 		}
 	}
+    .container {
+        margin-bottom: 2em;
+    }
+
+    lh, figcaption {
+        font-weight: bold;
+    }
+    figcaption {
+        font-size: 110%;
+    }
 </style>
 
 <body>
@@ -117,15 +128,29 @@
 			</nav>
 			</div>
 		</div>
-	</div>
 	<div class="container"  id="contentheading">
 	    <div class="row">
-		    <h2 class="text-center">Projects &amp; Code Snippets</h2>
+		    <h2 class="col-sm-4- col-sm-offset-4">Projects &amp; Code Snippets</h2>
 	    </div>
 	</div>
 	<div class="container">
 		<div class="row">
-		    <div class="col-lg-6 col-md-6 col-s-12">
+            <div class="col-sm-4 col-sm-offset-3">
+                <figure>
+                    <a href="../nearestmarta/index.html" target="_blank">
+                        <img src="../nearestmarta/nearestmartascreenshot.png" alt="screenshot of my Atlanta MARTA Train Station Finder">
+                    </a>
+                </figure>
+                <figcaption>MARTA Train Station Finder</figcaption>
+                    <ul>
+                        <lh>Tools Used:</lh>
+                        <li>Google Maps API</li>
+                        <li>Javascript</li>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                    </ul>
+            </div>
+		    <div class="col-sm-4 col-sm-offset-3">
 			    <figure>
                     <a href="../cityexperiencestore/index.html" target="_blank">
                         <img src="../cityexperiencestore/cityexpstorescreenshot.jpg" alt="screenshot of my sample luxury boutique
@@ -133,38 +158,15 @@ website, City Experience Store">
                     </a>
                 </figure>
 		        <figcaption>"The City Experience Store", a sample
-                             luxury boutique website. (opens in new
-                            window)
-                </figcaption>
+                             luxury boutique website</figcaption>
+                    <ul>
+                        <lh>Tools Used:</lh>
+                        <li>CSS3</li>
+                        <li>HTML5</li>
+                    </ul>
+
             </div>
-			<div class="col-lg-6 col-md-6 col-s-12">
-	          <figure>
-                  <a href="./ebayfee.html" target="_blank">
-                      <img src="./ebayfeescreenshot.jpg" alt="screenshot of my Javascript eBay fee
-                      calculator"></a></figure>
-              <figcaption>An eBay fee calculator written using jQuery (opens
-              in new window)
-              </figcaption>
-		</div>
-		</div>
-		<div class="row">
-		    <div class="col-lg-6 col-md-6 col-s-12">
-	            <figure>
-                    <a href="../nearestmarta/index.html" target="_blank">
-                        <img src="../nearestmarta/nearestmartascreenshot.png" alt="screenshot of my Atlanta MARTA Train Station Finder">
-                    </a>
-                </figure>
-            	<figcaption>Nearest Atlanta MARTA train station finder.
-                    This is the first time I've used the Google Maps API.
-                </figcaption>
-		    </div>
-            <div class="col-lg-6 col-md-6 col-s-12">
-            	<figure>
-                    <a href="./Faith Vending/index.html" target="_blank">
-                        <img src="./faithvendingscreenshot.png" alt="screenshot of a mockup site I did for a local business">
-                    </a>
-                </figure>
-	            <figcaption>A mockup site I did for a local vending machine business</figcaption>
-		    </div>
-	    </div>
+
+       </div>
+    </div>
 </body>
