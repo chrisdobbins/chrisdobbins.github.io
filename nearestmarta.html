@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>MARTA Train Station Finder</title>
+	<style>
+		body {
+			margin: 0 auto;
+			text-align: center;
+			background: url('Doraville_MARTA_station_at_night.jpg');
+			background-size: cover;
+			font-family: Arial Black, Helvetica, sans-serif;
+		}
+		#mapgoeshere{
+			width: 85vw;
+			height: 85vh;
+			margin: 0 auto;
+			margin-top: 2em;
+		}
+		
+		#directionsgohere {
+			width: 75vw;
+			margin: 0 auto;
+			margin-bottom: 2em;
+		}
+		
+		li {
+			list-style-type: none;
+		}
+		#findMARTA{
+			margin-top: 1em;
+			width: 33%;
+			height: 3em;
+			padding: .5em;
+		}
+		
+		#intro {
+			width: 66vw;
+			font-decoration: strong;
+			margin: 10vh auto 0 auto;
+			padding-top: .5em;
+			padding-bottom: 2em;
+			background: rgba(255,255,255,.75);
+		}
+		
+	
+	</style>
+
+	</head>
+
+	<body>
+	<section id="intro">
+		<h1>Nearest MARTA Train Station Finder</h1>
+		<p>This is meant to find the closest MARTA station  to you. I decided to embark on this project because, in my experience, Google Maps doesn't allow one to directly search for the closest MARTA train station and get an accurate result.</p>
+		<h2>Optional Settings</h2>
+		<ul>
+		<li><input name="directionsOptions" type="checkbox" id="hasFreeParking" value="hasFreeParking"> Free short-term parking</li>
+		<li><input name="travelMode" type="checkbox" id="walkingDirections">Walking directions (Note: Driving is the default setting)</li>
+		</ul>
+				<button id="findMARTA">Find MARTA!</button>
+		<p>Disclaimer: The program behind this page uses the spherical law of cosines to calculate the approximate straight-line distance between the coordinates reported by your browser/device and each MARTA station, then uses that information to find the closest station. In other words, this will get you to a station that is relatively close to you, but it may not be the absolute shortest driving/walking distance from you.</p>
+		</section>
+
+		
+		<div id="mapgoeshere">
+		</div>
+
+		
+		<div id="directionsgohere">
+		</div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyDAA5CVIPrgIJWuXb_GoQ1NrtNI2ROQQFo">
+    </script>
+    <script src="./martaStations.js"></script>
+    <script src="./nearestmarta.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#findMARTA').click(function() {
+                findMARTA();
+            });
+        });
+    </script>
+	</body>
+</html>
