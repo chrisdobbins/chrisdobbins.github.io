@@ -69,7 +69,7 @@ function findClosestStation(userPosition){
     var lat2, lng2;
 
     for (var station in martaStations){
-        if (freeParkingSelected && !martaStations[station]['hasFreeParking']){
+        if (freeParkingSelected && !martaStations[station].hasFreeParking){
             //user selects free parking option but the current station in the iteration
             //does not have free parking, so the loop skips to the next one
             continue;

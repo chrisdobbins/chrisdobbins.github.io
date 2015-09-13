@@ -3,10 +3,13 @@
 	<head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta property="og:title" content="Nearest MARTA Station Finder" />
-        <meta property="og:site_name" content="Nearest MARTA Station" />
-        <meta property="og:description" content="This is meant to find the closest MARTA station to you. I decided to embark on this project because, in my experience, Google Maps doesn't allow one to directly search for the closest MARTA train station and get an accurate result." />
-        <meta property="og:image" content="http://chrisdobbins.github.io/nearestmartascreenshot.png" />
+    <meta property="og:title" content="Nearest MARTA Station Finder" />
+    <meta property="og:site_name" content="Nearest MARTA Station" />
+    <meta property="og:description" content="This is meant to find the closest MARTA station to you.
+        I decided to embark on this project because, in my experience,
+        Google Maps doesn't allow one to directly search for the
+        closest MARTA train station and get an accurate result." />
+    <meta property="og:image" content="http://chrisdobbins.github.io/nearestmartascreenshot.png" />
 	<title>MARTA Train Station Finder</title>
 	<style>
 		body {
@@ -27,7 +30,6 @@
 			margin: 0 auto;
 			margin-bottom: 2em;
 		}
-		
 		li {
 			list-style-type: none;
 		}
@@ -46,13 +48,14 @@
 			background: rgba(255,255,255,.75);
 		}
 	</style>
-
 	</head>
 
 	<body>
 	<section id="intro">
 		<h1>Nearest MARTA Train Station Finder</h1>
-		<p>This is meant to find the closest MARTA station to you. I decided to embark on this project because, in my experience, Google Maps doesn't allow one to directly search for the closest MARTA train station and get an accurate result.</p>
+		<p>This is meant to find the closest MARTA station to you. I decided to embark on this project because,
+            in my experience, Google Maps doesn't allow one to directly search for the
+            closest MARTA train station and get an accurate result.</p>
 		<h2>Optional Settings</h2>
 		<ul>
 		<li><input name="directionsOptions" type="checkbox" id="hasFreeParking" value="hasFreeParking"> Free short-term parking</li>
@@ -61,12 +64,8 @@
 				<button id="findMARTA">Find MARTA!</button>
 		<p>Disclaimer: The program behind this page uses the spherical law of cosines to calculate the approximate straight-line distance between the coordinates reported by your browser/device and each MARTA station, then uses that information to find the closest station. In other words, this will get you to a station that is relatively close to you, but it may not be the absolute shortest driving/walking distance from you.</p>
 		</section>
-
-		
 		<div id="mapgoeshere">
 		</div>
-
-		
 		<div id="directionsgohere">
 		</div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
