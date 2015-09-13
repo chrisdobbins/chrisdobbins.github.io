@@ -1,0 +1,321 @@
+html {
+    background-size: 100%;
+    height: 100%;
+}
+body {
+	
+	margin: 0 auto;
+	font-family: 'Oswald', sans-serif;
+	color: dark grey;
+	overflow-x: hidden;	
+}
+
+#page-wrapper {
+  min-height: 100%;
+}
+
+#main {
+padding-bottom: 8vh;
+}
+
+header {
+	background: rgba(0,0,0,.8);
+	width: 100%;
+	width: 100vw;
+	margin-bottom: -12.5vh;
+	position: fixed;
+	z-index: 100;
+	top: 0;
+	padding: 0;
+}
+
+footer {
+	background: rgba(0,0,0,.95);
+	width: 100%;
+	width: 100vw;
+	color: white;
+	padding: 0;
+	bottom: 0;
+	text-align: center;
+	position: relative;
+	margin-top: -8vh;
+	height: 8vh;
+	clear: both;
+    
+}
+
+.collectionscontent{
+    text-align: center;
+
+}
+
+.collectionscontent a {
+    text-decoration: none;
+    color: black;
+    font-size: 150%;
+}
+
+.collectionscontent a:hover {
+    text-decoration: underline;
+}
+
+#men, #bags, #shoes, #jewelry, #accessories {
+  position: relative;
+  margin-top: 75px;
+}
+
+#women {
+  margin: 75px 0 0 0;
+}
+
+
+
+h2 {
+    margin-top: 115px;
+    font-size: 50px;
+}
+
+#headercontent {
+
+  
+}
+
+header ul {
+
+	font-weight: bolder;
+	margin: 0 auto;
+	position: relative;
+	right: 60px;
+	display: inline;
+	width: 40vw;	
+	/*padding-right: 3vw;*/
+}
+
+header li {
+	display: inline;
+	padding: 0;
+	margin: 0;
+	float: right;
+	font-size: 22px;
+	position: relative;
+	top: 5vh;
+	left: -2.5vw;
+}
+
+header h1 {
+	position: relative;
+	padding-left: 7.5vw;
+	width: 40%;
+	float: left;
+}
+
+header a {
+	color: white;
+	text-decoration: none;
+	padding: 0 20px;
+	display: block;
+	border-radius: 3px;
+}
+
+header a:visited {
+	color: white;
+}
+
+header a:active {
+	color: white;
+}
+
+header a:hover {
+	color: white;
+	background: #333333;
+	background: rgba(205, 192, 176, .35);
+}
+
+#link-button a {
+	color: white;
+	text-decoration: none;
+}
+
+#link-button a:visited {
+	text-decoration: none;
+	color: white;
+}
+
+#link-button a:active {
+	text-decoration: none;
+	color: white;
+}
+
+#landing-page-pop {
+	font-size: 70px;
+}
+
+.landing-page-content-top {
+	padding: 55px;
+	position: relative;
+	top: 15px;
+	margin-bottom: 600px;
+
+}
+
+.landing-page-content-top p {
+	position: relative;
+	left: 70px;
+	top: 55px;
+	margin-top: 150px;
+}
+
+
+.landing-page-content-left {
+	float: left;
+	width: 45%;
+	height: 40%;
+	color: #464646;
+	font-family: 'Oswald', sans-serif;
+	font-size: 65px;
+	position: relative;
+	left: 260px;
+}
+
+.landing-page-content-rt{
+	float: right;
+	height: 41%;
+	width: 45%;
+	color: #464646;
+	font-family: 'Oswald', sans-serif;
+	font-size: 24px;
+	text-align: left;
+	position: relative;
+	right: 60px;
+
+}
+
+.landing-page-content-rt p {
+	font-size: 18px;
+	color: #b7b7b7;
+
+}
+
+.newscontent {
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+hr {
+ width:  75%;
+ color: rgb(111,86,65);
+}
+
+.articleinfo {
+ box-sizing: border-box;
+ display: table;
+ float: left;
+ max-width: 250px;
+ max-height: 350px;
+ margin: 25px;
+ position: relative;
+ left: 55px;
+ 
+}
+
+.articleinfo img {
+    max-width: 225px;
+}
+
+.slideshow-container /*.slideshow*/ {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 45px;
+    padding: auto;  
+    overflow: hidden;
+}
+
+.slideshow li {
+ text-decoration: none;
+ display: inline;
+
+ 
+}
+
+.landscape {
+    width: 475px;
+    height: 300px;
+}
+
+.portrait {
+    width: 300px;
+    height: 475px;
+}
+
+button {
+	background-color: rgba(115,143,155, 1);
+	padding: 15px 25px 15px 25px;
+	color: white;
+	border-radius: 8px;
+	border: 0;
+	margin: 15px;
+	position: relative;
+	left: -15px;
+	margin-bottom: 8vh;
+}
+
+.landing-page-content-btm {
+	position: relative;
+	bottom: 8.5vh;
+	right: 100px;
+}
+
+//contact page
+
+input {
+   width: 100px;
+}
+
+#contactcontent{
+  margin: 0 auto;
+  text-align: center;
+  display: border-box;
+}
+
+#contactform {
+  margin: 0 auto;
+  
+  padding: 15px 0 0 25px;
+  width: 50%;
+  border-radius: 5px;
+  
+}
+
+input {
+ display: block; 
+ margin: 0 auto;
+ height: 25px;
+ padding: 5px 0 0 5px;
+ position: relative;
+ top: 0;
+ bottom: 0;
+ left: 0;
+ right: 0;
+ border-radius: 3px;
+ 
+}
+
+.submitbutton {
+ left: 0px; 
+
+}
+
+#submitbuttons {
+  display: block;
+  margin-bottom: 8vh;
+}
+
+#contactcontent h2 {
+  color: white;
+}
+
+textarea {
+ border-radius: 5px; 
+}
