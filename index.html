@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Christopher Dobbins Home Page">
+		<meta name="author" content="Christopher Dobbins">
+		<title>Christopher Jay | Home</title>
+	
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=Oxygen:400,700' rel='stylesheet' type='text/css'>	
+</head>
+<style>
+
+	body {
+		background-color: #000;
+		font-family: Oxygen, Helvetica, Arial, sans-serif;
+	}
+	#wrap {
+		min-height: 100%;
+	}
+	#maincontainer {
+		overflow: auto;
+		padding-bottom: 15em;
+	}
+	header {
+		font-family: Oxygen, Helvetica, sans-serif;
+		font-weight: 700;
+		color: white;
+		padding-bottom: 1em;
+	}
+	header h1{
+		font-weight: 700;
+	}
+	navbar ul {
+		list-style-type: none;
+		display: inline-block;
+		margin: 0 auto;
+	}
+	navbar ul li {
+		display: inline;
+		margin-right: 1em;
+		margin-bottom: 1.25em;
+		margin-top: 1.25em;
+	}
+	navbar ul a {
+		text-decoration: none;
+		display: inline;
+		color: white;
+		font-size: 1.25em;
+	}
+	#sidebar-wrapper ul {
+		color: white;
+		list-style-type: none;
+	}
+	#sidebar-wrapper ul li {
+		text-decoration: none;
+		 background-color: #41444b;
+		padding-top: .25em;
+		width: 100%;
+	}
+	#sidebar-wrapper ul > li:first-child {
+		font-weight: 700;
+		font-size: 1.25em;
+	}
+	#sidebar-wrapper ul > li:last-child {
+		padding-bottom: .25em;
+	}
+	#sidebar-wrapper ul li a {
+		color: white;
+		text-decoration: none;
+		padding: .25em;
+		width: 100%;
+	}
+	#sidebar-wrapper ul li a:hover {
+		font-weight: 700;
+		background-color: rgba(255,255,255,.125);
+	}
+	a.orangelink{
+		border-bottom: 3px solid #ee5004;
+		padding: .5em;
+	}
+	a.orangelink:hover {
+		color: #ee5004;
+		text-decoration: none;
+	}
+	a.bluelink{
+		border-bottom: 3px solid #219dbd;
+		padding: .5em;
+	}
+	a.bluelink:hover {
+		color: #219dbd;
+		text-decoration: none;
+	}
+	a.greenlink {
+		border-bottom: 3px solid #21bd20;
+		padding: .5em;
+	}
+	a.greenlink:hover {
+		color: #21bd20;
+		text-decoration: none;
+	}
+	article {
+		color: white;
+		background-color: #41444b;
+		padding: 1em;
+		margin: 0 auto;
+	}
+	#top-sidebar {
+		margin-bottom: 5em;
+	}
+	#top-sidebar li{
+		background-color: #41444b;
+	}
+	.footer {
+		color: white;
+		margin-top: -15em;
+		position: relative;
+		height: 15em;
+		clear: both;
+		padding-top: 20em;
+	}
+	@media(max-width:768px){
+		#sidebar-wrapper{
+			display: none;
+		}		
+	}
+	@media(max-width: 460px){
+		navbar ul li {
+			display: block;
+		}
+	}
+</style>
+
+<body>
+	<header class="text-center">
+		<h1>Christopher Dobbins</h1>
+		<navbar>
+			<ul class="text-center">
+                <!-- <li class="col-sm-3"><a class="greenlink" href="#">Ambitious</a></li> -->
+				<li class="col-sm-4"><a class="bluelink" href="portfolio.html">Creative</a></li>
+				<li class="col-sm-4"><a class="orangelink" href="resume.html">Driven</a></li>
+			</ul>
+		</navbar>
+	</header>
+	<div id="wrap page-content-wrapper">
+
+	<div id="maincontainer" class="container-fluid">
+		<div class="row">
+		<article class="col-sm-4 col-sm-push-4 text-center">
+			<h2>Welcome!</h2>
+			<p>I'm currently a student at General Assembly's Web Development Immersive program. Prior to WDI, I was a low-voltage technician, then I moved into the IT field doing desktop support, some coding, and repairing low-voltage electronics.</p>
+		</article>
+		<div id="sidebar-wrapper" class="col-sm-2 col-sm-push-5 text-center">
+			<ul  id="top-sidebar">
+				<li class="sidebar-brand">Useful Resources</li>
+				<li><a href="http://www.codecademy.com">Codecademy</a></li>
+				<li><a href="http://www.freecodecamp.com">Free Code Camp</a></li>
+				<li><a href="http://www.codeschool.com">Code School</a></li>
+                <li><a href="http://www.eloquentjavascript.net">Eloquent Javascript</a></li>
+
+			</ul>
+
+<!--
+			<ul  id="btm-sidebar">
+				<li class="sidebar-brand">Social</li>
+				<li><a href="#">FB</a></li>
+				<li><a href="#">Twitter</a></li>
+				<li><a href="#">Github</a></li>
+			</ul> -->
+		</div>
+		</div>
+		</div>
+	</div>
+</div>
+<footer class="col-md-12 footer">
+	<p>&copy; 2015  Christopher J. Dobbins</p>
+</footer>
+</body>
+</html>
