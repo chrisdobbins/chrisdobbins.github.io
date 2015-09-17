@@ -48,7 +48,8 @@ function getDirections(startingPosition, directionsService, map){
     }
     directionsService.route(request, function(result, status){
         if (status === google.maps.DirectionsStatus.OK){
-            console.log(result);
+            //trip duration, in mins
+            console.log(result.routes[0].legs[0].duration.text.split(' ')[0]);
             document.getElementById('directionsgohere').style.backgroundColor = 'rgba(255,255,255,.8)';
             showDirections.setDirections(result);
             showDirections.setMap(map);
@@ -64,12 +65,13 @@ function findClosestStation(userPosition){
     var shortestDist = 0;
     var nearestStation = '';
     var compareDist = 0;
+    var testArr = [];
     var destinationLatLng;
     var freeParkingSelected = document.getElementById('hasFreeParking').checked;
     var lat2, lng2;
 
-    for (var station in martaStations){
-        if (freeParkingSelected && !martaStations[station].hasFreeParking){
+    for (var station in martaStations) {
+        if (freeParkingSelected && !martaStations[station].hasFreeParking) {
             //user selects free parking option but the current station in the iteration
             //does not have free parking, so the loop skips to the next one
             continue;
@@ -79,14 +81,13 @@ function findClosestStation(userPosition){
             lat2 = martaStations[station].lat;
             lng2 = martaStations[station].lng;
         }
-
         compareDist = getDistance(userPosition.lat, userPosition.lng, lat2, lng2);
-
+        console.log(station.toString());
+        console.log(compareDist);
         if (shortestDist === 0 || compareDist < shortestDist){
             shortestDist = compareDist;
             nearestStation = station.toString();
             destinationLatLng = toLatLng(lat2, lng2);
-            console.log(nearestStation + ':  ' + shortestDist + ' mi');
         }
     }
     return destinationLatLng;
@@ -95,6 +96,7 @@ function findClosestStation(userPosition){
 //gets direct distance between
 // any two geographic points on Earth
 // using spherical law of cosines
+//reason for doing it this way: to limit number of calls to Google Maps API
 function getDistance(lat1, lng1, lat2, lng2) {
     //earth's approx radius in km
     var kmRadius = 6371;
@@ -104,6 +106,7 @@ function getDistance(lat1, lng1, lat2, lng2) {
     var radLng1 = toRadians(lng1);
     var radLng2 = toRadians(lng2);
     var lngDiff = radLng2 - radLng1;
+
     return toMiles(Math.acos(Math.sin(radLat1) * Math.sin(radLat2) +
             Math.cos(radLat1) * Math.cos(radLat2) * Math.cos(lngDiff)) * kmRadius);
 
@@ -114,7 +117,6 @@ function getDistance(lat1, lng1, lat2, lng2) {
         return kmDistance * .621371;
     }
 }
-
 function toLatLng(lat, lng) {
     return new google.maps.LatLng(lat, lng);
 }
