@@ -1,0 +1,758 @@
+      html, body {
+	margin: 0 auto;
+	padding: 0;
+	font-size: 100%;
+	font-family: Montserrat, sans-serif;
+	box-sizing: border-box;
+      }
+      
+      html {
+	position: absolute;
+      }
+      
+      .hideX {
+	overflow-x: hidden;
+      }
+
+      body {
+	height: 215vh;
+	overflow-x: hidden;
+	position: absolute;
+      }
+      
+      
+      #landing {
+	background-color: black;
+	background-image: url('landingbackground.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100vh;
+	width: 100vw;
+	position: absolute;
+	display: block;
+	margin: 0;
+	top: 0;
+	left: 0;
+	right: 0;
+      }
+      
+       header {
+	display: block;
+	height: 5vh;
+	line-height: 5vh;
+	width: 100%;
+	width: 100vw;
+      }
+    
+      .defaultheader {
+	background-color: rgb(25,38,56);
+	height: 5em;
+	position: absolute;
+	top: 0;
+	clear: both;
+      }
+      
+      .defaultheader ul {
+	position: relative;
+	top: 50%;
+      }
+      
+      /*BEGIN ABOUT & SVCS PAGES */
+      
+      #history, #goalsvalues, #testimonials, #businesses, #schools, #nonprofits {
+	position: relative;
+	width: 100%;
+	width: 100vw;
+      }
+      
+      #goalsvalues h2, #schools h2 {
+	top: -1em;
+	text-align: left;
+	width: 100%;
+	width: 100vw;
+	margin-left: 5vw;
+      }
+      
+      #goalsvalues, #schools {
+	float: right;
+	margin-top: 2em;
+      }
+      
+      .right article {
+	margin-left: 5vw;
+      }
+      
+      .pic {
+	max-height: 400px;
+	max-width: 600px;
+      }
+      
+      
+      .right {
+	float: right;
+	right: 5vw;
+	margin-bottom: 2em;
+	width: 50%;
+	width: 50vw;
+      }
+      
+      
+      
+      .right img, .left img {
+	max-width: 45%;
+	max-width: 45vw;
+	max-height: 20em;
+	margin-top: 25%;
+      }
+      
+      .left img {
+	margin-left: 5vw;
+      }
+      
+      .right img {
+	margin-left: 3vw;
+      }
+      
+ /*     .right img {
+	margin-left: 3vw;
+      }*/
+      
+      .left {
+	float: left;
+	position: relative;
+	left: 5vw;
+	margin-bottom: 2em;
+	width: 45%;
+	width: 45vw;
+      }
+      
+      #testimonials, #nonprofits {
+	margin-top: 90em;
+	margin-bottom: 5em;
+      }
+      
+      #testimonials h2, #nonprofits h2 {
+	top: -1em;
+	text-align: left;
+	width: 100%;
+	width: 100vw;
+	margin-left: 5vw;
+      }
+      
+      article {
+	margin-left: 5.5vw;
+	width: 40vw;
+	margin-top: 1em;
+	position: relative;
+      }
+       .defaulth2 {
+	  color: rgb(25,38,56);
+	  float: left;
+	  left: 5vw;
+	  right: 0;
+      }
+      
+      #history, #businesses {
+	margin-top: 12em;
+	margin-bottom: 2em;
+      }
+       
+      #history h2, #businesses h2 {
+	top: -1em;
+	text-align: left;
+	width: 100%;
+	width: 100vw;
+	margin-left: 5vw;
+      }
+      
+      
+      #history article, #businesses article  {
+	position: relative;
+	margin-top: 2em;
+	width: 45%;
+	width: 45vw;
+      }
+      
+      .defaultheader h1 a {
+	padding-top: 0;
+	padding-bottom: 0;
+      }
+      
+      .defaultheader h1 a:hover {
+	 background-color: transparent;
+      }
+      
+      .btmheaderwrap {
+	position: static;
+	left: 0;
+	right: 0;
+	background-color: rgb(160, 193, 209);
+	height: 2em;
+	margin-top: 5em;
+	text-align: center;
+	width: 100%;
+	width: 100vw;
+      }
+      
+      .btmheaderwrap a {
+	color: rgb(35, 44, 51);
+	line-height: 100%;
+	position: absolute;
+	width: auto;
+      }
+      
+      .btmheaderwrap a:hover {
+	background-color: rgba(35,44,51,.4);
+	color: white;
+	border-radius: 0;
+	height: 1em;
+	overflow-y: hidden;
+	
+      }
+      
+
+      .btmheaderwrap ul {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin-top: 5em;
+	float: none;
+	width: 100vw;
+      }
+      
+      .btmheaderwrap li {
+	height: 100%;
+	margin-right: 15vw;
+	position: static;
+      }
+      
+      .btmheaderwrap li a {
+	display: inline-block;
+      }
+      
+      /*END OF ABOUT & SVCS PAGES */
+      
+      
+      /*BEGIN CONTACT PAGE*/
+	#wrap {
+	  margin-top: 10em;
+	}
+	
+	#wrap label {
+	  color: rgb(25,38,56);
+	  display: block;
+	}
+	
+	.topalign{
+	    margin-top: 0 !important;
+	}
+	
+	h2.contactpage {
+	  font-size: 1.5em;
+	  display: inline;
+	  width: 100%;
+	  width: 100vw;
+	  margin-left: -10px;
+	  line-height: 100%;
+	  position: relative;
+	  top: 25%;
+	}
+	
+	a.contactpage {
+	 color: #0769AD; 
+	 padding: 0;
+	}
+	
+	
+	#contactinfo {
+	  position: relative;
+	    left: 3vw;
+	    width: 45vw;
+	    margin-bottom: 1em;
+	}
+	
+	#mapwrapper {
+	  width: 45%;
+	  width: 45vw;
+	  min-height: 400px;
+	  max-height: 600px;
+	  margin-top: 7.5em;
+	  position: absolute;
+	  margin-left: 3vw;
+	  left: 0;
+	  vertical-align: baseline;
+	}
+	
+	#mapwrapper img {
+	  margin-top: 1em;
+	}
+	
+	
+	form.right {
+	  right: 3%;
+	  right: 3vw;
+	  width: 35%;
+	  width: 35vw;
+	  text-align: left;
+	}
+	
+	.req {
+	  color: red;
+	}
+	
+	ul.contactpage {
+	 list-style-type: none; 
+	}
+	
+	.contactpage li {
+	    margin-top: 1em;
+	}
+	
+	.hide {
+	    display: none;
+	}
+	
+	#Field17, #Field17-1, #Field17-2 {
+	  width: 15% !important;
+	  display: inline;
+	}
+	
+	.symbol {
+	 display: none; 
+	}
+	
+	li.phone {
+	 display: inline; 
+	}
+	
+	#contactform h3, #contactinfo h3, #contactinfo p {
+	  position: relative;
+	  margin-top: 0;
+	}
+	
+	#wrap input {
+	  width: 90%;
+	  height: 2em;
+	  margin-top: .2em;
+	}
+	
+	#wrap label {
+	  margin-top: .75em;
+	}
+	
+	div.btmheaderwrap.contactpage {
+	  height: 3em;
+	  color: rgb(35, 44, 51)
+	}
+      
+      .wufoo h3 {
+	margin-top: 0;
+      }
+      
+      /*END OF CONTACT PAGE*/
+      
+      .defaultfooter {
+	position: relative;
+	bottom: 0;
+      }
+    
+      
+      header ul {
+	float: right;
+	position: relative;
+	top: 50%;
+	margin-top: 2.275em;
+
+      }
+      
+      #landing ul {
+	margin-top: 2em;
+      }
+      
+      
+      header li {
+	display: inline;
+	margin-right: 5vw;
+	position: relative;
+      }
+      
+      header h1 {
+	float: left;
+	position: relative;
+	left: 5vw;
+	font-weight: 700;
+	font-size: 40px;
+	color: white;
+	margin-top:.75em;
+      }
+      
+     #landing h1 {
+	margin-top: 1.125em;
+     }
+      
+      .landingcontent h2 {
+	margin: 0 auto;
+	position: relative;
+	right: 5vw;
+	top: 50%;
+	color: white;
+	font-weight: 700;
+	text-align: center;
+      }
+    
+      
+      a {
+	position: relative;
+	text-decoration: none;
+	color: white;
+	padding: .5em;
+	border-radius: 2px;
+      }
+      
+      header a:hover {
+	background-color: rgba(255, 255, 255, .3);
+      }
+      
+      .landingcontent {
+	text-align: center;
+	position: relative;
+	top: 25vh;
+      }
+      
+      .landingcontent a {
+	top: 12em;
+	 margin: 0 auto;
+	 width: 150px;
+	 height: 75px;
+	 color: black;
+	font-weight: bold;
+	display: block;
+	padding: .1em;
+      }
+      
+      .landingcontent h2 {
+	position: absolute !important;
+	left: 0;
+	right: 0;
+	display: block;
+	font-size: 3em;
+	height: auto;
+      }
+      
+      .landingcontent button {
+	background-color: white;
+	color: black;
+	display: block;
+	border: 0 none;
+	border-radius: 3px;
+	margin: 0 auto;
+	height: 75px;
+	width: 150px;
+	border: none;
+	font-size: 18px;
+	padding-top: .25em;
+      }
+      
+      
+      #more{
+	margin-top: 100vh;
+	height: 115vh;
+	width: 100vw;
+	position: absolute;
+	text-align: center;
+	
+	
+      }
+      
+      .embiggen {
+	font-size: 200%;
+	font-weight: bold;
+      }
+      
+      .shrink {
+	font-size: 75%;
+	font-weight: 400;
+	}
+      
+      .logo {
+	float: left;
+	display: block;
+	position: relative;
+	color: white;
+	width: 50vw;
+	clear: left;
+	margin-left: 1.5vw;
+      }  
+     
+     #more p a {
+      color: rgb(38,126,231);
+     }
+     
+      #more h1 {
+	text-align: center;
+	font-size: 3em;
+	margin: 0 auto;
+	color: rgb(25,38,56);
+	margin-top: .25em;
+	margin-bottom: .5em;
+      }
+      
+      #more h2 {
+	  position: static;
+	  color: black;
+	}
+	
+	#more section {
+	  margin-bottom: 5vh;
+	}
+	
+	.expand p {
+	  width: 50vw;
+	  margin: 0 auto;
+	}
+	
+	.heading {
+	    width: 50vw;
+	    display: block;
+	    margin: 0 auto;
+	}
+	
+	
+	.heading img {
+	  -ms-transform: translateY(.5em);
+	  -moz-transform: translateY(.5em);
+	  -webkit-transform: translateY(.5em);
+	  transform: translateY(.5em);
+	  max-height: 2.5em;
+	  margin-right: 1vw;
+	}
+	
+	
+	.heading h2 {
+	    display: inline;
+	    color: rgb(25,38,56);
+	    font-size: 2em;  
+	}
+	
+	.rotated {
+	    -ms-transform: translateY(.5em) rotate(180deg) !important;
+	    -moz-transform:  translateY(.5em) rotate(180deg) !important;
+	    -webkit-transform:  translateY(.5em) rotate(180deg) !important;
+	    -o-transform: translateY(.5em) rotate(180deg) !important;
+	    transform:  translateY(.5em) rotate(180deg) !important;
+	    height: 2.5em;
+	    margin-right: 1vw;
+	}
+	
+	.expand {
+	    display: none;
+	}
+	
+	.expand img {
+	  margin-top: 1em;
+	  max-width: 400px;
+	  max-height: 300px;
+	}
+	
+	.expand a {
+	    color: inherit;
+	    padding: 0;
+	}
+	footer {
+	  background-color: #0769AD;
+	  width: 100%;
+	  width: 100vw;
+	  height: 20em;
+	  padding: 0 0 2em 0;
+
+	  top: 65vh;
+	  margin-top: 10em;
+	  margin-right: 0;
+	  clear: both;
+	  display: block;
+	}
+	
+	#contact {
+	  float: right;
+	  max-width: 15vw;
+	  margin-right: 5vw;
+	  margin-top: 1em;
+	  font-size: 18px;
+	  color: white;
+	}
+	
+	#contact p {
+	margin: 0;
+	}
+	
+	#contact button {
+	  font-size: 1em;
+	  background-color: white;
+	  color: black;
+	  border: 0 none;
+	  height: 10vh;
+	  border-radius: .2em;
+	  margin-top: 1em;
+	}
+	
+	#bottomnav {
+	
+	  float: left;
+	  margin: 0 auto;
+	  margin-top: 1em;
+	  margin-left: 5vw;
+	  font-size: 1em;
+	  position: relative;
+	}
+	
+	.embolden {
+	    font-weight: bold;
+	}
+	
+	#bottomnav ul {
+	  display: inline-block;
+	  
+	  
+	}
+	
+	#bottomnav li {
+	  display: block;
+	}
+	
+	@media screen and (max-width:600px){
+	
+	header h1{
+	  font-size:1.5em !important;
+	  margin: auto;
+	  margin-top: .5em !important;
+	  text-align: center;
+	  float: none;
+	}
+	
+	header ul {
+	    text-align: center;
+	    position: static;
+	}
+	#more h1 {
+/* 	  font-size: 5vh; */
+	}
+	
+	.landingcontent {
+	    top: none;
+	}
+	
+	.landingcontent a {
+	  /*top: 5em;*/
+	  height: 10vh;  
+	  width: 10vw;
+	  
+	}
+	
+	.landingcontent button {
+	  font-size: 14px;
+	  height: 10vh;
+	  width: 27vw;
+	  top: 15vh;
+	  margin-left: -5%;
+	margin-left: -5vw;
+	}
+	
+	.landingcontent h2 {
+	    font-size: 2em !important;
+	    top: 25% !important;
+	}
+	
+	.heading h2 {
+	    font-size: 2.5em;
+	}
+	
+	footer {
+	 height: 40em;
+	 font-size: 3vh;
+	 text-align: center;
+	 min-width: 100%;
+	 min-width: 100vw;
+	 
+	}
+	
+	address {
+	 padding-top: 1em; 
+	}
+	
+	#contact {
+	  margin-top: 1em;
+	  float: none;
+	  max-width: none;
+	  text-align: center;
+	}
+	
+	#contact button {
+	 margin: 0 auto;
+	 
+	    height: auto;
+	    margin-top: 1em;
+	}
+	
+	#bottomnav {
+	
+	  max-width: none;
+	  margin-top: 3em;
+	}
+	
+	#bottomnav ul {
+	  display: block;
+	}
+	
+	#bottomnav li {
+	  text-align: center;
+	}
+      }      
+      
+    @media screen and (max-width:1061px) {
+      
+     #landing h1 {
+        
+	  margin: 0 auto;
+	  text-align: center;
+	  float: none;
+     }
+     
+     header h1 {
+       font-size: 5vh;
+	position: static !important;
+	left: none !important;
+     }
+     
+     #landing ul {
+        text-align: center;
+	position: static;
+	float: none;
+     }
+     
+     .landingcontent h2 {
+     font-size: 2em !important; 
+     }
+     
+     .landingcontent button {
+	height: auto !important;
+     }
+     
+     .landingcontent a {
+	margin-top: -3em;
+     }
+     
+     #contact button {
+      height: auto !important;
+     }
+     
+     #contact {
+      margin-right: 0;
+     }
+     
+     #bottomnav {
+      float: none;
+      margin-left: -5%;
+      margin-left: -5vw;
+     }
+     
+    }
