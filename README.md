@@ -10,7 +10,7 @@ This came about because I noticed the difficulty of finding the nearest MARTA tr
 * Google Maps API
 
 ### Faith Vending (6/2015)
-I did this as a mockup for a local vending machine company. This was my first freelance project.
+I did this as a mockup for a local vending machine company. This project was never completed because the company owners decided they didn't need a website after all.
 ####Technologies Used:
 * HTML5
 * CSS3
