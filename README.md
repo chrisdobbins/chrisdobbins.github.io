@@ -1,8 +1,15 @@
 # chrisdobbins.github.io
 ## Projects
 
+### Nearest MARTA Station Finder (6/2015)
+This came about because I noticed the difficulty of finding the nearest MARTA train station whenever I would get a ride from a friend or a co-worker. It works by utilizing HTML5 to capture the user's current geographic coordinates, then finding the closest station and getting directions to that station. The user can select walking directions as well as request a station with free parking.
+####Technologies Used:
+* HTML5
+* CSS3
+* JavaScript
+* Google Maps API
+
 ### Faith Vending (6/2015)
-####Description
 I did this as a mockup for a local vending machine company. This was my first freelance project.
 ####Technologies Used:
 * HTML5
