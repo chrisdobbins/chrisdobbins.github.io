@@ -47,7 +47,7 @@ function getLocWeather(latLng, city, state, country) {
   weatherXmlHttp.onreadystatechange = function() {
       var weatherData;
       if (weatherXmlHttp.response){
-        // create pop-up modal with weather info here
+        //TODO: create pop-up modal with weather info here
         weatherData = weatherXmlHttp.response;
         alert(`Weather for: ${(city) ? city + ', ' : ''}${(state) ? state + ', ' : ''}${(country) || ''}:
 coordinates: ${weatherData.id}
